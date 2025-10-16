@@ -14,24 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "Z-5 X AI Chat - Real-time AI Assistant",
+  description: "Experience real-time AI conversations with Z-5 X. Get instant streaming responses, chat history management, and a modern interface powered by Next.js.",
+  keywords: ["Z-5 X", "AI Chat", "Real-time Streaming", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI Assistant"],
+  authors: [{ name: "Z-5 X Team" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "Z-5 X AI Chat",
+    description: "Real-time AI conversations with instant streaming responses",
+    url: "https://aichatyougee.vercel.app",
+    siteName: "Z-5 X AI Chat",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "Z-5 X AI Chat",
+    description: "Real-time AI conversations with instant streaming responses",
   },
 };
 

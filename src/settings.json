@@ -1,0 +1,23 @@
+{
+  "app": {
+    "name": "Z-5 X AI Chat",
+    "version": "1.0.0",
+    "description": "AI-powered chat application with real-time streaming responses"
+  },
+  "api": {
+    "endpoint": "/api/ai-z5",
+    "timeout": 60000,
+    "maxRetries": 3
+  },
+  "ui": {
+    "theme": "light",
+    "maxMessages": 100,
+    "autoSave": true
+  },
+  "features": {
+    "streaming": true,
+    "sessionManagement": true,
+    "chatHistory": true,
+    "exportChat": false
+  }
+}

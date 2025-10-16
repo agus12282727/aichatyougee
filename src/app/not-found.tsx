@@ -4,8 +4,21 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Home, ArrowLeft } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 export default function NotFound() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const handleGoBack = () => {
+    if (typeof window !== 'undefined') {
+      window.history.back();
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-background p-4">
       <Card className="w-full max-w-md">
@@ -26,10 +39,12 @@ export default function NotFound() {
                 Home
               </Link>
             </Button>
-            <Button variant="outline" onClick={() => window.history.back()}>
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Go Back
-            </Button>
+            {isClient && (
+              <Button variant="outline" onClick={handleGoBack}>
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                Go Back
+              </Button>
+            )}
           </div>
         </CardContent>
       </Card>
